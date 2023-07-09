@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// import NavBar from "./components/NavBar";
+// import Body from "./components/Body";
+// import CardHome from "./components/CardHome";
+// import Shama from "./components/weeks/Shama";
+// import YakSham from "./components/weeks/YakSham";
+import Routea from "./components/Routes/Route";
+import { Provider } from "react-redux";
+import { store } from "./components/DarkMode/store";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App " >
+      
+      
+        {/* <Body /> */}
+         {/* <NavBar /> */}
+        {/* <Shama /> */}
+        {/* <YakSham /> */}
+        <Provider store={store}>
+          <div>
+            <Routea />
+          </div>
+        </Provider>
+        {/* <CardHome />  */}
+
     </div>
   );
 }
