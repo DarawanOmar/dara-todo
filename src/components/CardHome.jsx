@@ -12,7 +12,7 @@ const CardHome = () => {
             <main id="daily_week" className="max-w-5xl mx-auto  shadow-xl scroll-mt-24">
                 <div className="flex flex-col md:grid grid-cols-3 gap-14 p-10 font-bold">
                     
-                    <div  className=" flex flex-col shadow-2xl hover:scale-105 duration-500 cursor-pointer rounded-xl bg-gradient-to-b from-yellow-200 to-yellow-700">
+                    <div  className=" flex flex-col shadow-2xl  duration-500 cursor-pointer rounded-xl bg-gradient-to-b from-yellow-200 to-yellow-700">
                         <img src={shama} alt=""  className="mx-auto w-2/3 rounded-xl " />
                         <div className=" pb-8 text-center">
                             <h1 className="font-bold text-3xl text-white text-center mb-8">Saturday</h1>                   
@@ -20,7 +20,7 @@ const CardHome = () => {
                         </div>          
                     </div>
 
-                    <div className="flex flex-col shadow-2xl  hover:scale-105 duration-500 cursor-pointer rounded-xl  bg-gradient-to-b from-yellow-200 to-yellow-700">
+                    <div className="flex flex-col shadow-2xl   duration-500 cursor-pointer rounded-xl  bg-gradient-to-b from-yellow-200 to-yellow-700">
                         <img src={yakshama} alt=""  className="mx-auto w-2/3 rounded-xl" />
                         <div className="text-center pb-8">
                             <h1 className="font-bold text-3xl text-center text-white mb-8">Sunday</h1>
@@ -28,7 +28,7 @@ const CardHome = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col shadow-2xl  hover:scale-105 duration-500 cursor-pointer  rounded-xl bg-gradient-to-b from-yellow-200 to-yellow-700">
+                    <div className="flex flex-col shadow-2xl   duration-500 cursor-pointer  rounded-xl bg-gradient-to-b from-yellow-200 to-yellow-700">
                         <img src={dwshama} alt=""  className="mx-auto w-2/3 rounded-xl"/>
                         <div className="text-center pb-8">
                             <h1 className="font-bold text-3xl text-center text-white mb-8">Monday</h1>
@@ -36,7 +36,7 @@ const CardHome = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col shadow-2xl  hover:scale-105 duration-500 cursor-pointer  rounded-xl bg-gradient-to-b from-yellow-200 to-yellow-700">
+                    <div className="flex flex-col shadow-2xl   duration-500 cursor-pointer  rounded-xl bg-gradient-to-b from-yellow-200 to-yellow-700">
                         <img src={seshama} alt=""  className="mx-auto w-2/3 rounded-xl" />
                         <div className="text-center pb-8 ">
                             <h1 className="font-bold text-3xl text-center text-white mb-8">Tuesday</h1>
@@ -44,7 +44,7 @@ const CardHome = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col shadow-2xl  hover:scale-105 duration-500 cursor-pointer  rounded-xl bg-gradient-to-b from-yellow-200 to-yellow-700">
+                    <div className="flex flex-col shadow-2xl   duration-500 cursor-pointer  rounded-xl bg-gradient-to-b from-yellow-200 to-yellow-700">
                         <img src={chwarshama} alt=""  className="mx-auto w-2/3 rounded-xl" />
                         <div className="text-center pb-8">
                             <h1 className="font-bold text-3xl text-center text-white mb-8">Wednesday</h1>
@@ -53,7 +53,7 @@ const CardHome = () => {
                     </div>
 
 
-                    <div className="flex flex-col shadow-2xl  hover:scale-105 duration-500 cursor-pointer  rounded-xl bg-gradient-to-b from-yellow-200 to-yellow-700">
+                    <div className="flex flex-col shadow-2xl   duration-500 cursor-pointer  rounded-xl bg-gradient-to-b from-yellow-200 to-yellow-700">
                         <img src={benjshama} alt=""  className="mx-auto w-2/3 rounded-xl" />
                         <div className="text-center pb-8">
                             <h1 className="font-bold text-3xl text-center text-white mb-8">Thursday</h1>
@@ -61,7 +61,7 @@ const CardHome = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col shadow-2xl  hover:scale-105 duration-500 cursor-pointer  rounded-xl bg-gradient-to-b from-yellow-200 to-yellow-700">
+                    <div className="flex flex-col shadow-2xl   duration-500 cursor-pointer  rounded-xl bg-gradient-to-b from-yellow-200 to-yellow-700">
                         <img src={jwmha}  alt="" className="mx-auto w-2/3 rounded-xl" />
                         <div className="text-center pb-8">
                             <h1 className="font-bold text-3xl text-center text-white mb-8">Friday</h1>

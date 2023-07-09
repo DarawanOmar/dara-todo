@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { dark} from "./DarkMode/darkModeSlice";
 import { useDispatch,useSelector } from "react-redux";
 import dara from './img/dara.png'
-
+import {BsSun ,BsMoon} from 'react-icons/bs';
 const NavBar = () => {
 
     const[nav ,setNav] = useState(true);
@@ -19,10 +19,8 @@ const NavBar = () => {
 
 
     return ( 
-        <div className={darkvalue2 ? "bg-black text-white duration-700" : "bg-white text-black duration-700"}>
-            
-                <div>
-                    <div className="max-w-5xl mx-auto top-0 sticky shadow-xl  p-6 z-10 ">
+        <div className={darkvalue2 ? "bg-black text-white duration-700  top-0 sticky" : "bg-white text-black duration-700 top-0 sticky"}>
+                    <div className="max-w-5xl mx-auto top-0  shadow-xl  p-6 z-10 ">
                         <div className="flex justify-between items-center ">
 
                             <Link to={'/'}>
@@ -38,7 +36,7 @@ const NavBar = () => {
                             </div>
 
                             <div className="flex space-x-4">
-                                <button onClick={()=> dispatch(dark())}  className="font-serif text-3xl hover:opacity-8 ">{darkvalue2 ? <BiMoon/> : <BiSun/>}</button>
+                                <button onClick={()=> dispatch(dark())}  className="font-serif text-3xl hover:opacity-8 ">{darkvalue2 ? <BsMoon/> : <BsSun/>}</button>
                                 <div className="bg-gradient-to-t from-teal-500 w-10 h-10 rounded-full overflow-hidden cursor-pointer">
                                     <Link to={"/profile"}><img src={dara} alt="" /></Link>
                                 </div>
@@ -78,7 +76,7 @@ const NavBar = () => {
                     </div>
                        
                 </div>
-        </div>
+
      );
 }
  
