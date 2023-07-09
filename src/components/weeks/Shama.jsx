@@ -14,11 +14,7 @@ const DwSham = () => {
     const darkvalue2 = useSelector((store)=>store.darkMode.isDark)
 
     const [subject, setSubject] = useState("");
-    const [newtask, setNewTask] = useState([
-        { id:1, subject: "Do Home Work", completed: false , date : sub(new Date(),{minutes : 5}).toISOString()},
-        { id:2, subject: "Wash Dish", completed: false , date : sub(new Date(),{minutes : 17}).toISOString()},
-        { id:3, subject: "Watch Film", completed: false , date : sub(new Date(),{minutes : 8}).toISOString()}
-    ])
+    const [newtask, setNewTask] = useState([])
 
     const checked = (id) => {
         setNewTask(newtask.map((task) => task.id === id ? { ...task, completed: !task.completed } : { ...task }))
