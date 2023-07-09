@@ -17,7 +17,10 @@ const DwSham = () => {
     const [newtask, setNewTask] = useState([])
 
     const checked = (id) => {
-        setNewTask(newtask.map((task) => task.id === id ? { ...task, completed: !task.completed } : { ...task }))
+        const setNewTaskItem = newtask.map((task) => task.id === id ? { ...task, completed: !task.completed } : { ...task })
+        setNewTask(setNewTaskItem)
+        localStorage.setItem('todoList',JSON.stringify(setNewTaskItem))
+
     }
     const deleted = (id) => {
         setNewTask(newtask.filter((task) => id !== task.id))
@@ -104,7 +107,7 @@ const DwSham = () => {
                                     <div key={task.id} className='px-4 md:px-32 py-4 '>
                                         <div className={task.completed ? 'bg-green-500 text-white items-center rounded-md shadow-xl ' : 'rounded-md shadow-xl'}>
                                             <div className='px-10 py-2  border-2 border-white rounded-md'>
-                                                <div className={darkvalue2 ?'flex justify-between mt-6':'flex justify-between '}>
+                                                <div className={darkvalue2 ?'flex justify-between mt-6 pt-4':'flex justify-between pt-4'}>
                                                     <div className=''>
                                                         <input
                                                             className='h-5 w-5 rounded-md'
@@ -114,7 +117,7 @@ const DwSham = () => {
                                                         />
                                                     </div>
                                                     <div>
-                                                        <label className={task.completed ? "text-green-" : ""}>{task.subject}</label>
+                                                        <label onDoubleClick={()=> checked(task.id)} className=''>{task.subject}</label>
                                                     </div>
                                                     <div>
                                                         <button

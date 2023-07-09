@@ -14,11 +14,7 @@ const DwSham = () => {
     const darkvalue2 = useSelector((store)=>store.darkMode.isDark)
 
     const [subject, setSubject] = useState("");
-    const [newtask, setNewTask] = useState([
-        { id:1, subject: "Do Home Work", completed: false , date : sub(new Date(),{minutes : 5}).toISOString()},
-        { id:2, subject: "Wash Dish", completed: false , date : sub(new Date(),{minutes : 17}).toISOString()},
-        { id:3, subject: "Watch Film", completed: false , date : sub(new Date(),{minutes : 8}).toISOString()}
-    ])
+    const [newtask, setNewTask] = useState([])
 
     const checked = (id) => {
         setNewTask(newtask.map((task) => task.id === id ? { ...task, completed: !task.completed } : { ...task }))
@@ -110,7 +106,7 @@ const DwSham = () => {
                                     <div key={task.id} className='px-4 md:px-32 py-4 '>
                                         <div className={task.completed ? 'bg-green-500 text-white items-center rounded-md shadow-xl' : 'rounded-md shadow-xl'}>
                                             <div className='px-10 py-2  border-2 border-white rounded-md'>
-                                                <div className={darkvalue2 ?'flex justify-between mt-6':'flex justify-between '}>
+                                                <div className={darkvalue2 ?'flex justify-between mt-6 pt-4':'flex justify-between pt-4 '}>
                                                     <div>
                                                         <input
                                                             className='h-5 w-5 rounded-md'
