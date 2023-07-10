@@ -61,6 +61,7 @@ const DwSham = () => {
                                 <label className="font-serif font-bold text-xl pb-4 text-center"> Subject To Do</label>
                                 <input
                                     type="text"
+                            
                                     onChange={(e) => setSubject(e.target.value)}
                                     {...register("subject")}
                                     placeholder="Ex : Do Home Work"
@@ -70,7 +71,9 @@ const DwSham = () => {
                             </div>
                             <div className="">
                                 <button
-                                    onClick={handleSubmit(handleOnClickSubmit)}
+                                    onClick={() => {
+                                        handleSubmit(handleOnClickSubmit);
+                                    }}
                                     type="submit"
                                     className="bg-gradient-to-b from-yellow-200 to-yellow-700 text-white w-full font-bold rounded-lg text-lg font-serif p-2 mt-4 md:p-4 border-2 hover:border-amber-400 hover:bg-transparent hover:duration-700"
                                 >
@@ -90,7 +93,7 @@ const DwSham = () => {
                     <h1 className="text-2xl md:text-2xl ">This is Your <span className='text-yellow-400 text-3xl'>Subject</span> <br></br> Todo You have</h1>
                     <div className="">
                         <div className=" py-10 rounded-lg shadow-2xl ">
-                            
+                            {newtask.length ? 
                             <div className="flex flex-col">
                                 {newtask.map((task) => (
                                     <div key={task.id} className='px-4 md:px-32 py-4 '>
@@ -123,6 +126,8 @@ const DwSham = () => {
                                     </div>
                                 ))}
                             </div>
+                            : <h1 className='text-xl md:text-2xl border-2 border-white p-4  md:border-white md:shadow-xl rounded-md'>The ToDo List is Empty Now </h1>   
+                            }
                         </div>
                     </div>
                 </div>
