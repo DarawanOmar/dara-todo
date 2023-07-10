@@ -109,7 +109,8 @@ const DwSham = () => {
                                                         />
                                                     </div>
                                                     <div>
-                                                        <p  onDoubleClick={()=> checked(task.id)} className='text-xl flex flex-col'>{task.subject}</p>
+                                                        <p  onDoubleClick={()=> checked(task.id)} className='text-xl flex flex-col'> {(task.subject).length <= 10 ? task.subject 
+                                                        : `${(task.subject).slice(0,10)}....`} </p>
                                                     </div>
                                                     <div>
                                                         <button

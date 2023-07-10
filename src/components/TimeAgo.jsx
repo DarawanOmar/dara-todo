@@ -7,7 +7,7 @@ const TimeAgo = ({date}) => {
     let timeAgo = '';
     if(date){
         const time = parseISO(date)
-        const dated = format(time , "MM/dd/yyyy")
+        const dated = format(time , "MM/dd/yyyy pp")
         const timePeroid = formatDistanceToNow(time)
         timeAgo = ` ${timePeroid} ago ${dated}`
     }
