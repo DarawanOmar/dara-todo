@@ -1,6 +1,5 @@
 import { FaClipboardList } from "react-icons/fa";
 import {AiOutlineClose , AiOutlineMenu ,} from 'react-icons/ai';
-import {BiMoon , BiSun} from 'react-icons/bi';
 import {Link} from 'react-router-dom'
 import { useState } from 'react';
 import { dark} from "./DarkMode/darkModeSlice";
@@ -49,8 +48,8 @@ const NavBar = () => {
                 
                     
                     <div className={darkvalue2 ? "bg-black text-white duration-500" : "bg-white text-black duration-500"}>
-                        <div className={!nav ? "pt-4  shadow-xl max-w-5xl mx-auto w-full md:ml-24 absolute ease-in-out duration-500" : "fixed left-[-100%] duration-500"}>
-                            <div className={ darkvalue2 ? "flex flex-col text-center font-bold bg-black duration-700":"flex flex-col text-center font-bold bg-white duration-700"}>
+                        <div className={!nav ? "  shadow-xl max-w-5xl mx-auto w-full md:ml-24 absolute ease-in duration-700" : "fixed top-[100%] duration-700 ease-out"}>
+                            <div className={ darkvalue2 ? "flex flex-col text-center font-bold bg-black duration-700" : "flex flex-col text-center font-bold bg-white duration-700"}>
                                 {/* <hr className="bg-black mx-auto p-[1px] w-[300px]"/> */}
                                 <Link to={"/"} onClick={handelNav} className={!nav ? 'text-lg p-2  hover:bg-black hover:text-white hover:p-4 duration-500' : "hidden"}>Home</Link>
                                 <hr className="bg-black mx-auto p-[1px] w-[300px]"/>
@@ -71,7 +70,7 @@ const NavBar = () => {
                                 <Link to={"/jwmha"} onClick={handelNav} className={!nav ? 'text-lg p-2  hover:bg-black hover:text-white hover:p-4 duration-500' : "hidden"}>Friday</Link>
                                 <hr className="bg-black mx-auto p-[1px] w-[140px]"/>
                             </div>
-                            <p  className={darkvalue2 ?"text-center bg-black py-8 font-bold   text-xl duration-700" : 'text-center bg-white  py-8  text-xl duration-700'}> <span className="text-amber-400 font-bold text-2xl flex justify-center" >Organiztion <FaClipboardList/> </span>  Your Work By Using Todo </p>
+                            <p  className={darkvalue2 ?"text-center bg-black py-8 font-bold   text-xl duration-700 pb-14" : 'text-center bg-white  py-8  text-xl duration-700 pb-14'}> <span className="text-amber-400 font-bold text-2xl flex justify-center" >Organiztion <FaClipboardList/> </span>  Your Work By Using Todo </p>
                         </div>
                     </div>
                        

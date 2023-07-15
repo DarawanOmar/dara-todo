@@ -90,7 +90,7 @@ const DwSham = () => {
 
             <div className="md:max-w-4xl mx-auto">
                 <div className="text-center font-serif md:text-lg font-bold ">
-                    <h1 className="text-2xl md:text-2xl ">This is Your <span className='text-yellow-400 text-3xl'>Subject</span> <br></br> Todo You have</h1>
+                    <h1 className="text-lg md:text-2xl ">This is Your <span className='text-yellow-400 text-3xl'>Subject</span> <br></br> Todo You have</h1>
                     <div className="">
                         <div className=" py-10 rounded-lg shadow-2xl ">
                             {newtask.length ? 
@@ -127,7 +127,7 @@ const DwSham = () => {
                                     </div>
                                 ))}
                             </div>
-                            : <h1 className='text-xl md:text-2xl border-2 border-white p-4  md:border-white md:shadow-xl rounded-md'>The ToDo List is Empty Now </h1>   
+                            : <h1 className='text-lg md:text-2xl border-2 border-white p-4  md:border-white md:shadow-xl rounded-md'>The ToDo List is Empty Now </h1>   
                             }
                         </div>
                     </div>

@@ -54,7 +54,7 @@ const DwSham = () => {
                     <h1 className="text-center font-serif text-xl md:text-3xl font-bold px-4 pb-6">Write Your Think ToDo For <span className='text-yellow-400 text-3xl'>Monday</span></h1>
 
                     <div className="p-4 ">
-                        <div className=" p-4 py-6 border-2 border-white md:p-10 rounded-lg shadow-2xl">
+                        <div className=" p-4 py-6 border-2  border-white md:p-10 rounded-lg shadow-2xl">
                         <form onSubmit={handleSubmit(handleOnClickSubmit)}>
                            
                            <div className="flex flex-col  pb-4">
@@ -64,7 +64,7 @@ const DwSham = () => {
                                    onChange={(e) => setSubject(e.target.value)}
                                    {...register("subject")}
                                    placeholder="Ex : Do Home Work"
-                                   className="text-center bg-black p-3 md:p-4 rounded-lg border-2 text-white hover:border-amber-400"
+                                   className="invalid:border-red-500 text-center bg-black p-3 md:p-4 rounded-lg border-2 text-white hover:border-amber-400"
                                />
                                <p className='text-center text-red-400 font-bold '>{errors.subject?.message}</p>
                            </div>
