@@ -18,7 +18,7 @@ const NavBar = () => {
 
 
     return ( 
-        <div className={darkvalue2 ? "bg-black text-white duration-700  top-0 sticky" : "bg-white text-black duration-700 top-0 sticky"}>
+        <div className={darkvalue2 ? "bg-black text-white duration-700  top-0 sticky z-10" : "z-10 bg-white text-black duration-700 top-0 sticky"}>
                     <div className="max-w-5xl mx-auto top-0  shadow-xl  p-6 z-10 ">
                         <div className="flex justify-between items-center ">
 
@@ -48,7 +48,7 @@ const NavBar = () => {
                 
                     
                     <div className={darkvalue2 ? "bg-black text-white duration-500" : "bg-white text-black duration-500"}>
-                        <div className={!nav ? "  shadow-xl max-w-5xl mx-auto w-full md:ml-24 absolute ease-in duration-700" : "fixed top-[100%] duration-700 ease-out"}>
+                        <div className={!nav ? "fixed  shadow-xl max-w-5xl mx-auto w-full md:ml-24  ease-in duration-700 bottom-0 " : "fixed bottom-[-100%] duration-700 "}>
                             <div className={ darkvalue2 ? "flex flex-col text-center font-bold bg-black duration-700" : "flex flex-col text-center font-bold bg-white duration-700"}>
                                 {/* <hr className="bg-black mx-auto p-[1px] w-[300px]"/> */}
                                 <Link to={"/"} onClick={handelNav} className={!nav ? 'text-lg p-2  hover:bg-black hover:text-white hover:p-4 duration-500' : "hidden"}>Home</Link>
